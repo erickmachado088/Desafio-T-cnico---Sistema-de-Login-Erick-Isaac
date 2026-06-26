@@ -20,7 +20,7 @@ Siga os passos abaixo no seu terminal para rodar o projeto localmente:
 
 ## Na pasta que colocar o projeto digite os codigos no caminho da pasta no command prompt ou cmd:
 
-**Nota:** O comando `npm init -y` não é necessário, pois os arquivos `package.json` e `package-lock.json` já estão inclusos na pasta do projeto.
+**NOTA:** O comando `npm init -y` não é necessário, pois os arquivos `package.json` e `package-lock.json` já estão inclusos na pasta do projeto.
 
 **npm init -y**: cria o arquivo package.json que vai armazenar e manipular as (bibliotecas) que vamos adicionar.
 
