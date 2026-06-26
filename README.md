@@ -62,47 +62,39 @@ Explicação de partes do codigo:
 
 ## explicação de como executar o projeto:
 
-**1.**no insommia vamos em `New Project`, nomeação ao seu gosto.
+**1**.no insommia vamos em `New Project`, nomeação ao seu gosto.
 
-**2.**apos no novo projeto criado vamos em `+ Create`, em `Request collection`, nomeação ao seu gosto.
+**2**.apos no novo projeto criado vamos em `+ Create`, em `Request collection`, nomeação ao seu gosto.
 
-**3.**No `Request Collection` criado, presione `Ctrl + n` ou procure o `HTTP Request`.
+**3**.No `Request Collection` criado, presione `Ctrl + n` ou procure o `HTTP Request`.
 
-**4.**Coloque `http://localhost:3000` no lugar de um link de exemplo chamado `https://api.myproduct.com/v1/users`.
+**4**.Coloque `http://localhost:3000` no lugar de um link de exemplo chamado `https://api.myproduct.com/v1/users`.
 
-**5.**Va no VScode no `command prompt` ou `Powershell` e coloque `node server.js` para o servidor estar funcional para testes.
+**5**. Va no VScode no `command prompt` ou `Powershell` e coloque `node server.js` para o servidor estar funcional para testes.
 
-para os testes de registro, login, e verificação de usuarios cadastrados vamos dividir em 3 partes:
+## Para os testes de registro, login, e verificação de usuarios cadastrados vamos dividir em 3 partes:
 
-Importante:leia sempre as notas para evitar erros no teste.
+**Importante**:leia sempre as notas para evitar erros no teste.
 
 EX: `http://localhost:3000/users`
 
 * **POST/users**:
 Para registrar usuario, no lado esquerdo do link que vc substituiu no passo anterior mude de `GET` para `POST`, apos isso va em `Body` va em `No Body` e selecione `JSON`, no corpo digite name, email e password, para registro clique em send.
 **NOTA** Ao lado de `http://localhost:3000` coloque `/users`.
-
-
-{
-	"name": "",
-
-	"email": "",
-
-	"password": ""
-
-}
+    {
+	"name": "", 	
+    "email": "", 
+    "password": ""
+    }
 
 * **POST/login**:
 Para logar o usuario,  digite email e password para logar na conta criada anteriormente, aperte send.
 **NOTA** Ao lado de `http://localhost:3000` coloque `/login`.
 
-{
-
-	"email": "",
-
-	"password": ""
-
-}
+    {
+    "email": "",
+    "password": ""
+    }
 
 * **GET/users**:
 Simplesmente troque o `POST` por `GET`, aperte send.
