@@ -51,8 +51,9 @@ Explicação de partes do codigo:
 
 **const users = []**: cria a lista que vai armazenar os dados durante o tempo que o server estiver rodando e apagado apos deligalo.
 
-**app.post('/"sala-escolhida"', (req, res) => {}**: usando o post cria a demanda de pedir dados ao usuario e recuperar os mesmos.)
-**NOTA**: com if para contornar alguns problemas como informações faltando no cadastro, informações ja existentes, dados incorretos no login.
+**app.post('/"sala-escolhida"', (req, res) => {})**: usando o post cria a demanda de pedir dados ao usuario e recuperar os mesmos.
+
+**NOTA**: Foi utilizado o if para contornar alguns problemas como informações faltando no cadastro, informações ja existentes, dados incorretos no login.
 
 **app.listen(PORT, () => {console.log('Mensagem escolhida ${PORT}');})**
 :Aqui rodamos o servidor e usamos uma mensagem para confirmar se o mesmo foi iniciado.
@@ -80,6 +81,7 @@ EX: `http://localhost:3000/users`
 
 * **POST/users**:
 Para registrar usuario, no lado esquerdo do link que vc substituiu no passo anterior mude de `GET` para `POST`, apos isso va em `Body` va em `No Body` e selecione `JSON`, no corpo digite name, email e password, para registro clique em send.
+
 **NOTA** Ao lado de `http://localhost:3000` coloque `/users`.
 
 ```json
@@ -92,6 +94,7 @@ Para registrar usuario, no lado esquerdo do link que vc substituiu no passo ante
 
 * **POST/login**:
 Para logar o usuario,  digite email e password para logar na conta criada anteriormente, aperte send.
+
 **NOTA** Ao lado de `http://localhost:3000` coloque `/login`.
 
 ```json
@@ -103,4 +106,5 @@ Para logar o usuario,  digite email e password para logar na conta criada anteri
 
 * **GET/users**:
 Simplesmente troque o `POST` por `GET`, aperte send.
+
 **NOTA** Ao lado de `http://localhost:3000` coloque `/users`.
