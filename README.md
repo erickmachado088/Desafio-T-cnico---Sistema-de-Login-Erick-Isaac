@@ -24,6 +24,8 @@ Siga os passos abaixo no seu terminal para rodar o projeto localmente:
 
 **npm init -y**: cria o arquivo package.json que vai armazenar e manipular as (bibliotecas) que vamos adicionar.
 
+**NOTA:** Use o comando `npm install express` para instalar o node_modulos na pasta do projeto, pois o mesmo não foi carregado nos arquivos do github como o packege.josn e o packege-lock.json do `npm init -y`.
+
 **npm install express**: para simplifica e acelera a criacao/escrita de códigos complexos do zero, o Express fornece ferramentas para lidar com requisições HTTP (como GET e POST), gerenciamento de rotas e integração com bancos de dados. Criando o arquivo node_modules.
 
 ============================VS Code==========================
