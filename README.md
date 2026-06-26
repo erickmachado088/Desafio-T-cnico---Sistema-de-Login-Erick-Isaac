@@ -81,20 +81,25 @@ EX: `http://localhost:3000/users`
 * **POST/users**:
 Para registrar usuario, no lado esquerdo do link que vc substituiu no passo anterior mude de `GET` para `POST`, apos isso va em `Body` va em `No Body` e selecione `JSON`, no corpo digite name, email e password, para registro clique em send.
 **NOTA** Ao lado de `http://localhost:3000` coloque `/users`.
+
+```json
     {
 	"name": "", 	
     "email": "", 
     "password": ""
     }
+```
 
 * **POST/login**:
 Para logar o usuario,  digite email e password para logar na conta criada anteriormente, aperte send.
 **NOTA** Ao lado de `http://localhost:3000` coloque `/login`.
 
+```json
     {
     "email": "",
     "password": ""
     }
+```
 
 * **GET/users**:
 Simplesmente troque o `POST` por `GET`, aperte send.
